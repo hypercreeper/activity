@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Activity (choose activity number)</title>
+</head>
+<body>
+<div style="position: absolute; left: 29%; top: 40%;">
+<h1>(choose question here)</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="answer" onkeydown="enter(event)"><button onclick="checkanswer(document.getElementById('answer').value)">Unlock!</button>
+</div>
+<script>
+function checkanswer(key) {
+if(key == "desertification") {
+document.write("congrats");
+}
+}
+function enter(ev) {
+if(ev.keyCode == 13) {
+document.getElementsByTagName("button")[0].click();
+}
+}
+</script>
+
+</body>
+</html>
